@@ -1,0 +1,7 @@
+#conda create -n env_jevops python=3.12
+#conda activate env_jevops
+
+tqdm
+matplotlib
+requests
+datazets

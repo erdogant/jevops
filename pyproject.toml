@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jevops"
+dynamic = ["version"]
+authors = [{ name = "Erdogan Taskesen", email = "erdogant@gmail.com" },]
+description = "jevops is a Python library for ..."
+readme = "README.md"
+requires-python = ">=3"
+license = "MIT"
+keywords = ["Python", "jevops", "Machine Learning", "AI", ""]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "Operating System :: Unix",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: MacOS",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    'numpy',
+    'matplotlib',
+    'tqdm',
+    'datazets',
+]
+
+[project.scripts]
+jevops = "jevops.skills_install:main"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.package-data]
+jevops = ["skills/**/*"]
+
+# Add the entire directory with subdirs into the package
+[tool.setuptools.packages.find]
+include = ["jevops*"]
+
+[tool.setuptools.dynamic]
+version = { attr = "jevops.__version__" }
+
+[project.urls]
+Homepage = "https://erdogant.github.io/jevops"
+Download = "https://github.com/erdogant/jevops/archive/{version}.tar.gz"
