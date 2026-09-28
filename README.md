@@ -19,44 +19,25 @@
        width="250"
        align="left" />
 </a>
-jevops is a Python package for probability density fitting of univariate distributions for random variables.
-The jevops library can determine the best fit for over 90 theoretical distributions. The goodness-of-fit test is used to score for the best fit and after finding the best-fitted theoretical distribution, the loc, scale, and arg parameters are returned.
-It can be used for parametric, non-parametric, and discrete distributions. ⭐️Star it if you like it⭐️
+JevOps is a Python package for agentic classification. JevOps uses AI agents to run classification on various tasks. ⭐️Star it if you like it⭐️
 </div>
 
 ---
 
 ### Key Features
 
-| Feature | Description |
-|--------|-------------|
-| [**Parametric Fitting**](https://erdogant.github.io/jevops/pages/html/Parametric.html) | Fit distributions on empirical data X. |
-| [**Non-Parametric Fitting**](https://erdogant.github.io/jevops/pages/html/Quantile.html) | Fit distributions on empirical data X using non-parametric approaches (quantile, percentiles). |
-| [**Discrete Fitting**](https://erdogant.github.io/jevops/pages/html/Discrete.html) | Fit distributions on empirical data X using binomial distribution. |
-| [**Predict**](https://erdogant.github.io/jevops/pages/html/Functions.html#module-jevops.jevops.jevops.predict) | Compute probabilities for response variables y. |
-| [**Synthetic Data**](https://erdogant.github.io/jevops/pages/html/Generate.html) |  Generate synthetic data. |
-| [**Plots**](https://erdogant.github.io/jevops/pages/html/Plots.html) | Varoius plotting functionalities. |
+TODO
 
 ---
 
 ### Resources and Links
-- **Example Notebooks:** [Examples](https://erdogant.github.io/jevops/pages/html/Documentation.html)
-- **Blog Posts:** [Medium](https://erdogant.github.io/jevops/pages/html/Documentation.html#medium-blog)
-- **Documentation:** [Website](https://erdogant.github.io/jevops)
-- **Bug Reports and Feature Requests:** [GitHub Issues](https://github.com/erdogant/jevops/issues)
+TODO
 
 ---
 
 ### Background
 
-* For the parametric approach, The jevops library can determine the best fit across 89 theoretical distributions.
-  To score the fit, one of the scoring statistics for the good-of-fitness test can be used used, such as RSS/SSE, Wasserstein,
-  Kolmogorov-Smirnov (KS), or Energy. After finding the best-fitted theoretical distribution, the loc, scale,
-  and arg parameters are returned, such as mean and standard deviation for normal distribution.
-
-* For the non-parametric approach, the jevops library contains two methods, the quantile and percentile method.
-  Both methods assume that the data does not follow a specific probability distribution. In the case of the quantile method,
-  the quantiles of the data are modeled whereas for the percentile method, the percentiles are modeled.
+* TODO
 
 ---
 
@@ -98,53 +79,8 @@ jevops install skill --harness claude              # unchanged original behaviou
 <hr>
 
 ### Examples
+ TODO
 
-##### [Example: Quick start to find best fit for your input data](https://erdogant.github.io/jevops/pages/html/Examples.html#)
-
-```python
-
-# [jevops] >INFO> fit
-# [jevops] >INFO> transform
-# [jevops] >INFO> [norm      ] [0.00 sec] [RSS: 0.00108326] [loc=-0.048 scale=1.997]
-# [jevops] >INFO> [expon     ] [0.00 sec] [RSS: 0.404237] [loc=-6.897 scale=6.849]
-# [jevops] >INFO> [pareto    ] [0.00 sec] [RSS: 0.404237] [loc=-536870918.897 scale=536870912.000]
-# [jevops] >INFO> [dweibull  ] [0.06 sec] [RSS: 0.0115552] [loc=-0.031 scale=1.722]
-# [jevops] >INFO> [t         ] [0.59 sec] [RSS: 0.00108349] [loc=-0.048 scale=1.997]
-# [jevops] >INFO> [genextreme] [0.17 sec] [RSS: 0.00300806] [loc=-0.806 scale=1.979]
-# [jevops] >INFO> [gamma     ] [0.05 sec] [RSS: 0.00108459] [loc=-1862.903 scale=0.002]
-# [jevops] >INFO> [lognorm   ] [0.32 sec] [RSS: 0.00121597] [loc=-110.597 scale=110.530]
-# [jevops] >INFO> [beta      ] [0.10 sec] [RSS: 0.00105629] [loc=-16.364 scale=32.869]
-# [jevops] >INFO> [uniform   ] [0.00 sec] [RSS: 0.287339] [loc=-6.897 scale=14.437]
-# [jevops] >INFO> [loggamma  ] [0.12 sec] [RSS: 0.00109042] [loc=-370.746 scale=55.722]
-# [jevops] >INFO> Compute confidence intervals [parametric]
-# [jevops] >INFO> Compute significance for 9 samples.
-# [jevops] >INFO> Multiple test correction method applied: [fdr_bh].
-# [jevops] >INFO> Create PDF plot for the parametric method.
-# [jevops] >INFO> Mark 5 significant regions
-# [jevops] >INFO> Estimated distribution: beta [loc:-16.364265, scale:32.868811]
-```
-
-<p align="left">
-  <a href="https://erdogant.github.io/jevops/pages/html/Examples.html#make-predictions">
-  <img src="https://github.com/erdogant/jevops/blob/master/docs/figs/example_figP4c.png" width="450" />
-  </a>
-</p>
-
-
-#
-
-##### [Example: Plot summary of the tested distributions](https://erdogant.github.io/jevops/pages/html/Examples.html#plot-rss)
-
-After we have a fitted model, we can make some predictions using the theoretical distributions.
-After making some predictions, we can plot again but now the predictions are automatically included.
-
-<p align="left">
-  <a href="https://erdogant.github.io/jevops/pages/html/Examples.html#plot-rss">
-  <img src="https://github.com/erdogant/jevops/blob/master/docs/figs/fig1_summary.png" width="450" />
-  </a>
-</p>
-
-#
 
 <hr>
 
